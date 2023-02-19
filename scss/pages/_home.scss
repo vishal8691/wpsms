@@ -1,0 +1,17 @@
+.white_bg_wrapper{
+    border: 1px solid #edeff1;
+    background: #FFFFFF;
+    border: 1px solid #EDEFF1;
+    border-radius: 28px;
+    opacity: 1;
+    width: 100%;
+    padding:32px 32px;
+    @include desk{
+      padding: 48px 72px;
+    }
+    @include desk-s{
+      padding:48px 48px;
+    }
+  }
+
+ 

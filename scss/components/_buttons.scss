@@ -1,0 +1,38 @@
+.btn{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include remy(14);
+    line-height: 19px;
+    height: 52px;
+    padding: 0 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    @include trans2s;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .icon{
+        margin-right: 10px;
+        display: inline-flex;
+    }
+}
+
+.primary_btn{
+    background:$primary-btn;
+    color: #fff;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.secondary_btn{
+    background:$secondry-btn;
+    color:$secondry-color;
+    border: 1px solid  $secondry-color;
+    &:hover{
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,68 @@
+
+@import     
+    'helpers/_mixins.scss', 
+	'base/_colors.scss',
+	'base/_typography.scss';
+	 /** Adding icons to the site **/
+
+/** Helpers includes all variabls and config files **/
+@import
+     
+	'helpers/_variables.scss',
+	'helpers/_functions.scss',
+	'helpers/_comman.scss'; 
+
+
+/** Components includes buttons, carousel, dropdown etc.. **/
+@import
+	'components/_buttons.scss',
+	'components/_form.scss',
+	'components/_table.scss',
+	'components/_fonts.scss';
+
+/** Layout folder styles for major sections of the layout like a header, footer and styles for a grid system **/
+@import
+	'layout/_header.scss',
+	'layout/_footer.scss', 
+	'layout/_modal.scss';
+	
+
+
+/** Component css links **/
+@import
+	
+	'pages/_home.scss';
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+ 	
+ 	
+ 	
+ 	
+
+
+
+
+
+

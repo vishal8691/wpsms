@@ -1,0 +1,193 @@
+/*Table Content
+ =================================================
+ * Form Style 
+ - Floating Effect 
+ - Input Floating Effect 
+ - Text Area Floating Effect
+ - Select Menu Floating Effect
+ - Jelly Radio Button Effect
+ - Custom Radio Button
+ - Opacity classes
+ - Padding left Right none
+ - pull left right
+
+  * ELEMENTS
+ - Main Banner
+ - Page Intro
+ 
+ ================================================
+ */
+/*-------------------------------------------------------------------------------------------*/
+/* Form Style    ||---------------------------- */
+/*-------------------------------------------------------------------------------------------*/
+button,
+input,
+a {
+  outline: none; }
+  button:focus,
+  input:focus,
+  a:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+.form-group {
+  margin-bottom: 24px;
+  position: relative; }
+  .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12px;
+    margin: 0 0 8px 0px;
+    color: #373B42;
+    display: block; }
+  .form-group input {
+    margin: 0 0 0 0px;
+    font-size: 14px;
+    letter-spacing: -0.26px;
+    padding: 0px 14px 0px;
+    height: 52px;
+    font-weight: 400;
+    width: 100%;
+    border: 1px solid #D7D9E1;
+    color: #000;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    position: relative;
+    background: transparent;
+    z-index: 9;
+    border-radius: 4px;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all; }
+    .form-group input:focus, .form-group input:not(:placeholder-shown) {
+      border-color: #368BEC;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .form-group input:invalid {
+      border-color: #EA093A;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #EA093A; }
+    .form-group input:invalid + label {
+      color: #EA093A; }
+    .form-group input::-webkit-input-placeholder {
+      color: #2A2E35;
+      opacity: 0.5;
+      font-size: 14px; }
+    .form-group input::-moz-placeholder {
+      color: #2A2E35;
+      opacity: 0.5;
+      font-size: 14px; }
+    .form-group input::-ms-input-placeholder {
+      color: #2A2E35;
+      opacity: 0.5;
+      font-size: 14px; }
+  .form-group textarea {
+    margin: 0 0 0 0px;
+    font-size: 14px;
+    padding: 12px 14px;
+    height: 100px;
+    width: 100%;
+    border: 1px solid #D7D9E1;
+    color: #373B42;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    position: relative;
+    background: transparent;
+    z-index: 9;
+    border-radius: 4px;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all; }
+    .form-group textarea:focus, .form-group textarea:not(:placeholder-shown) {
+      border-color: #368BEC;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .form-group textarea::-webkit-input-placeholder {
+      color: #2A2E35;
+      opacity: 0.5;
+      font-size: 14px; }
+    .form-group textarea::-moz-placeholder {
+      color: #2A2E35;
+      opacity: 0.5;
+      font-size: 14px; }
+    .form-group textarea::-ms-input-placeholder {
+      color: #2A2E35;
+      opacity: 0.5;
+      font-size: 14px; }
+  .form-group .invalid-feedback {
+    color: #D0021B;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    display: block; }
+
+input ::-webkit-input-placeholder {
+  /* Edge */
+  color: #737B89; }
+
+input :-ms-input-placeholder {
+  /* Internet Explorer */
+  color: #737B89; }
+
+input ::-ms-input-placeholder {
+  color: #737B89; }
+
+input ::placeholder {
+  color: #737B89; }
+
+/* selectpicker css start */
+.cs-selectpicker.bg-hidden .bootstrap-select {
+  width: auto !important; }
+  .cs-selectpicker.bg-hidden .bootstrap-select .dropdown-toggle {
+    background: transparent;
+    border: transparent;
+    color: #FF7B41;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 14px;
+    padding: 5px 0; }
+    .cs-selectpicker.bg-hidden .bootstrap-select .dropdown-toggle:focus {
+      outline: none !important;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+
+.cs-selectpicker.bg-hidden label {
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-bottom: 0; }
+
+.cs-selectpicker .dropdown-menu {
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(20, 24, 47, 0.12), 0 2px 4px 0 rgba(20, 24, 47, 0.1), 0 4px 8px 0 rgba(20, 24, 47, 0.1), 0 12px 16px 0 rgba(20, 24, 47, 0.12), 0 16px 32px 0 rgba(20, 24, 47, 0.24);
+  box-shadow: 0 1px 2px 0 rgba(20, 24, 47, 0.12), 0 2px 4px 0 rgba(20, 24, 47, 0.1), 0 4px 8px 0 rgba(20, 24, 47, 0.1), 0 12px 16px 0 rgba(20, 24, 47, 0.12), 0 16px 32px 0 rgba(20, 24, 47, 0.24);
+  margin-top: 0px;
+  -webkit-transform: translate3d(-27px, 0px, 0px) !important;
+  transform: translate3d(-27px, 0px, 0px) !important;
+  top: inherit !important; }
+  .cs-selectpicker .dropdown-menu .dropdown-menu {
+    width: auto;
+    background: none;
+    top: inherit !important;
+    -webkit-transform: inherit !important;
+    -ms-transform: inherit !important;
+    transform: inherit !important; }
+    .cs-selectpicker .dropdown-menu .dropdown-menu li a {
+      font-size: 14px;
+      padding: 4px 12px; }
+      .cs-selectpicker .dropdown-menu .dropdown-menu li a.active, .cs-selectpicker .dropdown-menu .dropdown-menu li a:focus {
+        background: #182145;
+        color: #fff;
+        outline: none; }
+
+.cs-selectpicker.white-text .bootstrap-select .dropdown-toggle {
+  color: #fff; }

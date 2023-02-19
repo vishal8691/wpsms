@@ -1,0 +1,62 @@
+.cs_header{
+	background:$grblue;
+	padding: 16px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	width: 100%;
+	z-index: 9;
+	.header-logo{
+		max-width:300px;
+		display: flex;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.cs_app_sidepanel {
+	background: #fff;
+	width: 300px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	padding:140px 30px 30px;
+	.sidepanel_inner{
+		ul{
+			li{
+				margin-bottom: 8px;
+				a{
+					padding:12px 10px;
+					display: flex;
+					border-radius: 10px;
+					text-align: left;
+					font: normal normal 600 17px/22px Segoe UI;
+					letter-spacing: 0px;
+					color: #1E2327;
+					opacity: 1;
+					background: transparent;
+					transition: 0.2s ease-in-out;
+					&:hover,
+					&.active{
+						background:$gray-800;
+						color:$secondry-color;
+						svg{
+							path{
+								fill:$secondry-color;
+							}
+						}
+					}
+					.icon{
+						display: inline-flex;
+						margin-right: 10px;
+						min-width: 20px;
+						align-items: center;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,223 @@
+@use "sass:math";
+/*loader css*/
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  65% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.7; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  65% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.7; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } 
+  }
+
+
+  @-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  60% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  60% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+
+  @mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(244,50,155,0.4);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(244,50,155,0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(244,50,155,0);
+	}
+}
+
+@keyframes confirmorder {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(16, 6, 55, 0.8);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 24px rgba(16, 6, 55, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(16, 6, 55, 0);
+	}
+}
+
+
+
+/*Font size mixin*/
+@mixin remy($pxsize) {
+  font-size: math.div($pxsize, 16) + rem;
+}
+
+@mixin trans2s {
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+
+
+
+$phones: 480px;
+$phonem: 599px;
+$phonel: 767px;
+$tabm: 991px;
+$tabland:1024px;
+$tabv: 1100px;
+$tabv-min: 1100px;
+$tabl: 1200px;
+$desk-s: 1300px;
+$desk: 1400px;
+$phonel-m: 768px;
+$phone-sm: 365px;
+
+@mixin dsk-tab {
+  @media (min-width: #{$tabm}),  (max-width: #{$tabl}) {
+    @content;
+  }
+}
+
+@mixin tab-phn {
+  @media (min-width: #{$tabl}),  (max-width: #{$phonel}) {
+    @content;
+  }
+}
+
+@mixin phonem {
+  @media (max-width: #{$phonem}) {
+    @content;
+  }
+}
+@mixin tabland {
+  @media (max-width: #{$tabland}) {
+    @content;
+  }
+}
+@mixin tabl {
+  @media (max-width: #{$tabl}) {
+    @content;
+  }
+}
+@mixin tabm {
+  @media (max-width: #{$tabm}) {
+    @content;
+  }
+}
+
+@mixin tabv {
+  @media (max-width: #{$tabv}) {
+    @content;
+  }
+}
+
+@mixin tabv-min {
+  @media (min-width: #{$tabv-min}) {
+    @content;
+  }
+}
+
+
+@mixin phonel {
+  @media (max-width: #{$phonel}) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media (max-width: #{$phones}) {
+    @content;
+  }
+}
+
+@mixin phone-sm {
+  @media (max-width: #{$phone-sm}) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media (min-width: #{$desk}) {
+    @content;
+  }
+}
+@mixin desk-s {
+  @media (min-width: #{$desk-s}) {
+    @content;
+  }
+}
+
+@mixin phonem-m {
+  @media (min-width: #{$phonel}) {
+    @content;
+  }
+}
+
+@mixin tabl-m {
+  @media (min-width: #{$tabl}) {
+    @content;
+  }
+}
+@mixin tabl-v {
+  @media (min-width: #{$tabm}) {
+    @content;
+  }
+}
+
+@mixin phonel-m {
+  @media (min-width: #{$phonel-m}) {
+    @content;
+  }
+}

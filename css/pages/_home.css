@@ -1,0 +1,7 @@
+.main-wrapper {
+  min-height: 700px; }
+
+.hero-carousel .slick-slide {
+  padding: 0 15px; }
+  .hero-carousel .slick-slide img {
+    width: 100%; }

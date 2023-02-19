@@ -1,0 +1,20 @@
+
+$font1:'segoe_uiregular';
+$font2: 'segoe_uiregular';
+
+body{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.heading2{
+	text-align: left;
+	line-height: 37px;
+	@include remy(28);
+	font-weight: 600;
+	letter-spacing: 0px;
+	color: #1E2327;
+	opacity: 1;
+}
+
