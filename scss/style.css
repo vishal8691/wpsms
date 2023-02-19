@@ -420,7 +420,7 @@ body {
 }
 
 .phone_image_wrap {
-  background: url("../../images/icons/phone_graphic.svg") no-repeat;
+  background: url("../images/icons/phone_graphic.svg") no-repeat;
   width: 320px;
   height: 645px;
   background-size: 100%;
@@ -774,7 +774,7 @@ body {
 
 @font-face {
   font-family: "segoe_uiregular";
-  src: url("../../fonts/segoeui-webfont.woff2") format("woff2"), url("../../fonts/segoeui-webfont.woff") format("woff");
+  src: url("../fonts/segoeui-webfont.woff2") format("woff2"), url("../fonts/segoeui-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
