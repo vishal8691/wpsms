@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet" />
       <link class="main-stylesheet" href="scss/style.css" rel="stylesheet" type="text/css" />
    </head>
    <body>
@@ -139,12 +140,11 @@
                                              <label class="form-label">Sender</label>
                                              <p class="helper_text">Select Sender Number</p>
                                              <div class="ctsm-selctpicker">
-                                                <select>
+                                                <select id="phoneselect">
                                                    <option>+13238256677</option>
                                                    <option>+12238256677</option>
                                                    <option>+11238256677</option>
                                                    <option>+15238256677</option>
-
                                                 </select>
                                              </div>
                                           </div>
@@ -152,26 +152,26 @@
                                           <h5 class="form-title mb-16">Recipients</h5>
                                           <div class="form-group">
                                              <label class="form-label">Select a Group</label>
-                                             <div class="ctsm-selctpicker">
-                                                <select>
-                                                   <option>+13238256677</option>
-                                                   <option>+12238256677</option>
-                                                   <option>+11238256677</option>
-                                                   <option>+15238256677</option>
-
-                                                </select>
+                                             <div class="ctsm-selctpicker groupselect_wrapper">
+                                                <select id="groupselect" multiple class="groupselect_wrapper">
+                                                     <option value="value1">Admin</option>
+                                                     <option value="value2">Booth License</option>
+                                                     <option value="value3">Food Trucks</option>
+                                                     <option value="value4">Newsletter</option>
+                                                     <option value="value5">Next Event</option>
+                                                 </select>
+                                                
                                              </div>
                                           </div>
 
                                           <div class="form-group">
                                              <label class="form-label">Enter Custom Number</label>
                                              <div class="ctsm-selctpicker">
-                                                <select>
+                                                <select id="groupselect2" multiple class="groupselect_wrapper">
                                                    <option>+13238256677</option>
                                                    <option>+12238256677</option>
                                                    <option>+11238256677</option>
                                                    <option>+15238256677</option>
-
                                                 </select>
                                              </div>
                                           </div>
@@ -267,6 +267,7 @@
           
       
       <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+      <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
       <script src="js/custom.js" type="text/javascript"></script>
    </body>
 </html>

@@ -680,7 +680,38 @@ body {
   border-bottom-color: #1E2327;
 }
 
-.ctsm-selctpicker select {
+.ss-content {
+  background: #f6f8fa;
+  border: none;
+  font-size: 1rem;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: #1E2327;
+  opacity: 1;
+}
+.ss-content .ss-option:hover {
+  background: transparent !important;
+  color: #3481C4 !important;
+}
+.ss-content .ss-selected {
+  color: #ffffff !important;
+  background: #3481C4 !important;
+}
+.ss-content .ss-selected:hover {
+  color: #ffffff !important;
+  background: #3481C4 !important;
+}
+
+.groupselect_wrapper .ss-selected {
+  background: transparent !important;
+  color: #3481C4 !important;
+}
+.groupselect_wrapper .ss-selected:hover {
+  color: #3481C4 !important;
+  background: transparent !important;
+}
+
+.ctsm-selctpicker select, .ctsm-selctpicker .ss-main {
   width: 100%;
   border: none;
   background: #fff;
@@ -690,6 +721,61 @@ body {
   line-height: 21px;
   letter-spacing: 0px;
   color: #1E2327;
+}
+.ctsm-selctpicker select .ss-arrow, .ctsm-selctpicker .ss-main .ss-arrow {
+  width: 14px;
+  height: 14px;
+}
+.ctsm-selctpicker select .ss-arrow path, .ctsm-selctpicker .ss-main .ss-arrow path {
+  stroke: #3481C4;
+}
+.ctsm-selctpicker select:focus, .ctsm-selctpicker .ss-main:focus {
+  box-shadow: none;
+}
+.ctsm-selctpicker select .ss-placeholder, .ctsm-selctpicker .ss-main .ss-placeholder {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #ABAFB5;
+}
+.ctsm-selctpicker select .ss-values .ss-value, .ctsm-selctpicker .ss-main .ss-values .ss-value {
+  flex-direction: row-reverse;
+  padding: 4px 4px 4px 0;
+  background: #EDEFF1;
+  color: #1E2327;
+  height: 34px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ctsm-selctpicker select .ss-values .ss-value .ss-value-text, .ctsm-selctpicker .ss-main .ss-values .ss-value .ss-value-text {
+  color: #1E2327;
+  font-size: 0.625rem;
+  line-height: 14px;
+  padding: 0 20px;
+}
+.ctsm-selctpicker select .ss-values .ss-value .ss-value-delete, .ctsm-selctpicker .ss-main .ss-values .ss-value .ss-value-delete {
+  padding: 0;
+  width: 35px;
+  height: 34px;
+  justify-content: center;
+  border: none;
+  background: #E4E4E4;
+  position: relative;
+}
+.ctsm-selctpicker select .ss-values .ss-value .ss-value-delete:after, .ctsm-selctpicker .ss-main .ss-values .ss-value .ss-value-delete:after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #1E2327;
+  display: inline-block;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.ctsm-selctpicker select .ss-values .ss-value .ss-value-delete svg path, .ctsm-selctpicker .ss-main .ss-values .ss-value .ss-value-delete svg path {
+  stroke: #1E2327;
 }
 
 .action_btn_wrapper {

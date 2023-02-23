@@ -124,8 +124,40 @@
   }
 }
 
+.ss-content{
+  background: #f6f8fa;
+  border: none;
+  @include remy (16);
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: $primary-color;
+  opacity: 1;
+  .ss-option{
+    &:hover{
+      background: transparent !important;
+      color:$secondry-color !important;
+    }
+  }
+  .ss-selected{
+    color:$white !important;
+    background: $secondry-color !important;
+    &:hover{
+      color:$white !important;
+      background: $secondry-color !important;
+    }
+  }
+}
+
+.groupselect_wrapper .ss-selected{
+  background: transparent !important;
+  color:$secondry-color !important;
+  &:hover{
+    color:$secondry-color !important;
+    background: transparent !important;
+  }
+}
 .ctsm-selctpicker{
-  select{
+  select, .ss-main{
     width: 100%;
     border: none;
     background: #fff;
@@ -135,7 +167,68 @@
     line-height: 21px;
     letter-spacing: 0px;
     color: $primary-color;
+    .ss-arrow{
+      width: 14px;
+      height: 14px;
+      path{
+        stroke:$secondry-color;
+      }
+    }
+    &:focus{
+      box-shadow: none;
+    }
+    .ss-placeholder{
+      font-style: italic;
+      @include remy(16); 
+      line-height: 21px;
+      color: $gray-100;
+       }
+    .ss-values .ss-value {
+      flex-direction:row-reverse;
+      padding: 4px 4px 4px 0;
+      background: $gray-200;
+      color:$primary-color;
+      height: 34px;
+      border-radius: 10px;
+      overflow: hidden;
+      .ss-value-text{
+       color:$primary-color;
+       @include remy(10);
+       line-height: 14px;
+       padding: 0 20px;
+      }
+      .ss-value-delete{
+        padding: 0;
+        width: 35px;
+        height: 34px;
+        justify-content: center;
+        border: none;
+        background:#E4E4E4;
+        position: relative;
+        &:after{
+          position: absolute;
+          content: "";
+          width: 16px;
+          height: 16px;
+          border: 1px solid #1E2327;
+          display: inline-block;
+          border-radius: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translateY(-50%) translateX(-50%);
+
+        }
+        svg path{
+          stroke:$primary-color;
+        }
+      }
+    }
+    
   }
+  
+  
+  
+ 
 }
 .action_btn_wrapper{
   display: flex;
